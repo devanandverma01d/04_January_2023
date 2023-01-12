@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Loop Statement- For in and For of</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /*we can write css here*/
+    </style>
+    <script>
+        /*We can write JS code before closing of head tag*/
+    </script>
+</head>
+
+<body>
+
+
+    <script>
+        /*We can write js code before closing of body tag*/
+        let student1 = {
+            //1.Property:value
+            name: "Devanand",
+            surname: 'Verma',
+            address: "Avadhpuri Bhopal",
+            contact: 9074528630,
+            friends: ["Vipin", "Ankit", "Alok", "Ashok"]
+            //2. Method
+        };
+
+
+        /*
+        Syntax-
+            for(key in object){
+            block of code
+        }
+        */
+        for (key in student1) {
+            //console.log(student1[`${key}`]);
+            console.log(student1[key])
+        }
+    </script>
+
+    <script>
+        /*
+        Syntax- For of loop-
+        for (variable of iterable) {
+            code block to be executed
+        }
+        */
+        var name = "Devanand Verma" // string is iterable
+        for (x of name) {
+            console.log(x);
+        }
+        var students = ["Vipin", "Ankit", "Alok", "Ashok"]
+        for (student of students) {
+            console.log(student);
+        }
+    </script>
+</body>
+
+</html>
